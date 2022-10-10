@@ -37,7 +37,7 @@ def main():
     if(len(sys.argv) == 3 or len(sys.argv) == 4):
         if (sys.argv[1] == "encode"):
             if(len(sys.argv) == 4):
-                enc = encrypt(sys.argv[2], sys.argv[3])
+                enc = encrypt(sys.argv[2], int(sys.argv[3]))
             else:
                 enc = encrypt(sys.argv[2])
             print("Encrypted value: "+ enc)
